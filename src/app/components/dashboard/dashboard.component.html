@@ -1,0 +1,36 @@
+<!--This is a concept of string interpulation-->
+<h2>Welcome To ONS Solution  {{userName}}</h2>
+<!--property binding-->
+<input type="text" [id]="ID">
+<input type="text" id="{{ID}}">
+<input type="text" [disabled]="isDisabled">
+<!--style binding
+ <element [style.style-property]="'style-value'">
+    in-Line css-->
+
+<h1 [style.color]="'green'" [style.text-align]="'centre'" 
+[style.font-size.px]="'24'">ONS Solutions </h1>
+
+<h2 [style.color]="getColor()"> hello </h2>
+<img [src]="itemImageUrl" alt="item" >
+
+<tr><td [colSpan]=" 1 + 1 "> Three-Four</td></tr>
+
+<!--Conditional style-->
+
+<h2 [style.color]="isError ?'red':'green'" >ONS Solution</h2>
+
+<!--font style-->
+
+<h2 [style.font-style]="isError ? 'italic':'normal'">ONS Solution</h2>
+
+<h2 [style.text-decoration]="isError ? 'underline':'normal'">ONS Solution</h2>
+
+<!--multiple style binding-->
+<h2 [ngStyle]="myStyle"> ONS Solution</h2>
+
+<!--class binding-->
+
+<h2 [class.simpleStyle]="applyClass">using class binding</h2>
+<h2 [ngClass]="applyClasses"> Apply Class Binding </h2>
+

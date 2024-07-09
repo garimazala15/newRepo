@@ -1,0 +1,16 @@
+.simpleStyle{
+    color: red;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.text-red{
+    color: red;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-bold{
+    font-weight: bold;
+}

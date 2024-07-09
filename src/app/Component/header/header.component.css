@@ -1,0 +1,59 @@
+/* Header Styles */
+/* Minimal CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Ensure no margins on the header */
+    padding: 0; /* Ensure no paddings on the header */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.header .left {
+    color: white;
+    font-size: 25px;
+    margin: 0; /* Remove margin-top */
+    padding: 0 20px; /* Add horizontal padding if needed */
+}
+
+.left .tittle {
+    font-size: 40px;
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+.header .right {
+    color: white;
+    font-size: 30px;
+    margin: 0; /* Remove margin-top */
+    padding: 0 20px; /* Add horizontal padding if needed */
+}
+
+.right a {
+    color: white;
+    text-decoration: none; /* Ensure links do not have underlines */
+    padding: 0; /* Ensure no padding */
+}
+
+/* Container Styles */
+.container {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}

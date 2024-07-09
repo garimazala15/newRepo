@@ -1,0 +1,278 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif;
+    margin-top: -42%;
+}
+
+.top {
+    width: 120%;
+    height: 600px;
+    margin-left: -10%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/assets/homeback1.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top .left {
+    float: left;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.top .left p {
+    margin-left: 60px;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.top .left span {
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.top .right {
+    margin-top: 40px;
+    margin-right: 30px;
+    float: right;
+    align-items: center;
+    max-width: 500px;
+    background-color: darkblue;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form h2 {
+    color: #00bfff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container for the name fields */
+.name-fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.name-fields .input-container {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color:black;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+small {
+    color: red;
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.middle1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.middle1 .card1{
+    text-align: center;
+    padding: 20px;
+}
+.middle1 .card2{
+    text-align: center;
+    padding: 20px;
+}
+ 
+.middle1 .card3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.middle1 h2 {
+    color:darkblue;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.middle1 img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.middle1 p{
+    color: blue;
+    font-size: 15px;
+}
+.middle1{
+    margin-bottom: 10px;
+}
+.middle2 {
+    width: 120%;
+    height: 500px; /* Adjusted height to ensure it fits in the view */
+    margin-left: -10%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    background-color: darkblue;
+    padding: 20px; /* Padding for internal spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+    position: relative; /* To ensure positioning context */
+}
+
+.middle2 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children */
+    justify-content: center; /* Center children */
+    width: 80%; /* Make content less wide than parent */
+    max-width: 800px; /* Limit content width */
+    color: white; /* Ensure text is visible against dark background */
+}
+
+.middle2 h1 {
+    font-size: 30px;
+    margin: 0 0 20px 0; /* Margin for spacing */
+}
+
+.middle2 p {
+    font-size: 20px;
+    margin: 0 0 20px 0; /* Margin for spacing */
+    line-height: 1.6; /* Improve readability */
+}
+
+.middle2 button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px; /* Spacing above button */
+    width: fit-content; /* Fit button to content */
+}
+
+.middle2 button:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+/* Add this to ensure no additional space around the .middle2 element */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.bottom .card1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.bottom .card2 {
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.bottom .card1 .left, 
+.bottom .card2 .left {
+    flex: 1;
+    padding: 20px;
+}
+
+.bottom .card1 .right,
+.bottom .card2 .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.bottom .card1 .left img{
+    margin-top: -37px;
+    max-width: 100%;
+    height: 500px;
+
+
+}
+.bottom .card2 .right img {
+    max-width: 100%;
+    height: 500px;
+
+}
+
+.bottom .card2 .left h2, 
+.bottom .card1 .right h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
