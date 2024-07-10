@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="registration.component.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FnhimbZYMErh0oDrv",
+      });
+   })();
+</script>
+
 </head>
 <body>
     <div class="Contanier">
@@ -68,7 +79,7 @@
             </div>
              <button type="submit" [disabled]="!isOtpSent || registerForm.invalid">SignUp</button>
         </form>
-        <p>Already Memeber?<a routerLink="/login">Login</a></p>
+        <p>Already Memeber? <a routerLink="/login">Login</a></p>
         </div>
         <div  class="otp-overlay" *ngIf="isOtpModalVisible">
             <div class="otp-modal">

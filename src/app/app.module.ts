@@ -22,6 +22,7 @@ import { RegistrationComponent } from './Component/registration/registration.com
 import { VerifyOtpComponent } from './Component/verify-otp/verify-otp.component';
 import { VerificationSuccessComponent } from './Component/verification-success/verification-success.component';
 import { LoginComponent } from './Component/login/login.component';
+import { EmailService } from './Service/email.service';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { LoginComponent } from './Component/login/login.component';
     ReactiveFormsModule
   ],
   providers: [
+    EmailService,
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

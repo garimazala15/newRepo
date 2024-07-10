@@ -15,10 +15,9 @@ const routes: Routes = [
   //{path:'contact',component:ContactComponent},
   //{path:'dashboard',component:DashboardComponent},
   //{path:'movies',component:MoviesComponent},
-  {path:'',component:RegistrationComponent},
-  { path: '', redirectTo: '/registration', pathMatch: 'full' },
   { path: 'registration', component: RegistrationComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/registration', pathMatch: 'full' } // default route
 ];
 
 @NgModule({
