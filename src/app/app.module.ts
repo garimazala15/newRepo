@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationComponent } from './Component/registration/registration.component';
 import { VerifyOtpComponent } from './Component/verify-otp/verify-otp.component';
 import { VerificationSuccessComponent } from './Component/verification-success/verification-success.component';
+import { LoginComponent } from './Component/login/login.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { VerificationSuccessComponent } from './Component/verification-success/v
     RegistrationComponent,
     VerifyOtpComponent,
     VerificationSuccessComponent,
+    LoginComponent,
 
   ],
   imports: [
